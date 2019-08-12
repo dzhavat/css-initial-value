@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import data from './properties.json';
+import * as data from './properties.json';
 
 interface Property {
 	syntax: string;
