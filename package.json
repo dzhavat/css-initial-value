@@ -15,6 +15,7 @@
 	"license": "MIT",
 	"main": "./out/extension.js",
 	"contributes": {},
+	"publisher": "dzhavat",
 	"repository": {
 		"type" : "git",
 		"url": "https://github.com/dzhavat/css-initial-value"
