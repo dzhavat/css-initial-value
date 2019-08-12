@@ -11,7 +11,9 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:css"
+		"onLanguage:css",
+		"onLanguage:scss",
+		"onLanguage:sass"
 	],
 	"license": "MIT",
 	"main": "./out/extension.js",
