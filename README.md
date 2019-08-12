@@ -1,6 +1,6 @@
-# css-default README
+# CSS Initial Value
 
-This is the README for your extension "css-default". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "css-initial-value". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
