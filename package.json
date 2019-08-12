@@ -2,7 +2,7 @@
 	"name": "css-initial-value",
 	"displayName": "CSS Initial Value",
 	"description": "Get the initial value of each property as specified by the spec.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -20,7 +20,7 @@
 	"contributes": {},
 	"publisher": "dzhavat",
 	"repository": {
-		"type" : "git",
+		"type": "git",
 		"url": "https://github.com/dzhavat/css-initial-value"
 	},
 	"scripts": {
