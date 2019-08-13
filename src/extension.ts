@@ -23,20 +23,17 @@ export function activate(context: vscode.ExtensionContext) {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
 			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+:/ig);
 
-			if (!range) {
+			if (range === undefined) {
 				return;
 			}
 
-			let word = doc.getText(range);
-			const value = properties[word.substring(0, word.length - 1)].initial;
+			const initialValue = getInitialValue(doc.getText(range));
 
-			if (value === undefined) {
+			if (initialValue === undefined) {
 				return;
 			}
 
-			const text = new vscode.MarkdownString(`Initial value: \`${value}\``);
-
-			return new vscode.Hover(text);
+			return new vscode.Hover(getText(initialValue));
 		}
 	};
 
@@ -50,6 +47,32 @@ export function activate(context: vscode.ExtensionContext) {
 	);
 
 	context.subscriptions.push(disposable);
+}
+
+function getInitialValue(word: string): string | string[] {
+	return properties[word.substring(0, word.length - 1)].initial;
+}
+
+function getText(initialValue: string | string[]): vscode.MarkdownString {
+	let value = '';
+
+	if (Array.isArray(initialValue)) {
+		const props = initialValue.map(item => {
+			return `* ${item}: \`${properties[item].initial}\``;
+		});
+
+		value = `
+Initial value
+
+As each of the properties:
+
+${props.join('\n')}
+		`;
+	} else {
+		value = `Initial value: \`${initialValue}\``;
+	}
+
+	return new vscode.MarkdownString(value);
 }
 
 export function deactivate() {}
