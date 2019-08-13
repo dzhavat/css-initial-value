@@ -12,3 +12,7 @@ VS Code extension that shows the initial value of each property.
 ## Demo
 
 ![demo](demo.gif)
+
+## Credit
+
+The data used for this extension is from [MDN](https://github.com/mdn/data).
