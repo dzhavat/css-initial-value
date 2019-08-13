@@ -2,7 +2,7 @@
 	"name": "css-initial-value",
 	"displayName": "CSS Initial Value",
 	"description": "Get the initial value of each property.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
