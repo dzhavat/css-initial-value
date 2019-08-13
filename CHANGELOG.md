@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.2 (2019-08-12)
+
+* Fix display of initial values of shorthand properties
+
 ## 0.1.1 (2019-08-12)
 
 * Fix support for `scss` and `sass` files.
