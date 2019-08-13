@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.1.2 (2019-08-12)
+## 0.1.2 (2019-08-13)
 
 * Fix display of initial values of shorthand properties
 
