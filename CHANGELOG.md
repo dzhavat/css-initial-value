@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.0 (2019-08-14)
+
+* Add support for `less` files.
+
 ## 0.1.2 (2019-08-13)
 
 * Fix display of initial values of shorthand properties

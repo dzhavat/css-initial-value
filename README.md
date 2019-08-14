@@ -6,8 +6,9 @@ VS Code extension that shows the initial value of each property.
 
 * Works with the following file types:
   * `.css`
-  * `.scss`
+  * `.less`
   * `.sass`
+  * `.scss`
 
 ## Demo
 

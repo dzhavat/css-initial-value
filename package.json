@@ -12,6 +12,7 @@
 	],
 	"activationEvents": [
 		"onLanguage:css",
+		"onLanguage:less",
 		"onLanguage:sass",
 		"onLanguage:scss"
 	],
