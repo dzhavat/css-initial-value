@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.1 (2019-08-17)
+
+* Fix regex to detect when there’s space between property and colon (#2)
+
 ## 0.2.0 (2019-08-14)
 
 * Add support for `less` files.
