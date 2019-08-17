@@ -21,7 +21,7 @@ const properties: { [key: string]: Property } = data;
 export function activate(context: vscode.ExtensionContext) {
 	const hoverProvider: vscode.HoverProvider = {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
-			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+:/ig);
+			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+ *:/ig);
 
 			if (range === undefined) {
 				return;
@@ -51,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function getInitialValue(word: string): string | string[] {
-	return properties[word.substring(0, word.length - 1)].initial;
+	return properties[word.slice(0, -1).trim()].initial;
 }
 
 function getText(initialValue: string | string[]): vscode.MarkdownString {
