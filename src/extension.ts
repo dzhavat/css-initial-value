@@ -21,7 +21,7 @@ const properties: { [key: string]: Property } = data;
 export function activate(context: vscode.ExtensionContext) {
 	const hoverProvider: vscode.HoverProvider = {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
-			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+ *:/ig);
+			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+\s*:/ig);
 
 			if (range === undefined) {
 				return;
