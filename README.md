@@ -5,10 +5,10 @@ VS Code extension that shows the initial value of each property.
 ## Features
 
 * Works with the following file types:
-  * `.css`
-  * `.less`
-  * `.sass`
-  * `.scss`
+  * `CSS`
+  * `Less`
+  * `Sass`
+  * `Scss`
 
 ## Demo
 

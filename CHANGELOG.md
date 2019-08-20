@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2 (2019-08-20)
+
+* Add support for unsaved files
+
 ## 0.2.1 (2019-08-17)
 
 * Fix regex to detect when there’s space between property and colon (#2)
