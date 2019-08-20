@@ -38,12 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
 	};
 
 	let disposable = vscode.languages.registerHoverProvider(
-		[
-			{ scheme: 'file', language: 'css' },
-			{ scheme: 'file', language: 'less' },
-			{ scheme: 'file', language: 'sass' },
-			{ scheme: 'file', language: 'scss' }
-		],
+		['css', 'less', 'sass', 'scss'],
 		hoverProvider
 	);
 
