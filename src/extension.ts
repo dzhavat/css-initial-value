@@ -21,6 +21,23 @@ const properties: { [key: string]: Property } = data;
 export function activate(context: vscode.ExtensionContext) {
 	const hoverProvider: vscode.HoverProvider = {
 		provideHover(doc, pos, token): vscode.ProviderResult<vscode.Hover> {
+			const templateLanguages: string [] = ['vue', 'svelte'];
+			
+			if (templateLanguages.indexOf(doc.languageId) !== -1) {
+				const styleRegex = /<\s*style[^>]*>([\s\S]*?)<\s*\/\s*style>/g,
+						match = styleRegex.exec(doc.getText());
+	
+				if (match) {
+					const styleStartPos = doc.positionAt(match.index),
+						  styleEndPos = doc.positionAt(match.index + match[0].length),
+						  shouldShowInitialValue = (pos.line > styleStartPos.line && pos.line < styleEndPos.line);
+					
+					if (!shouldShowInitialValue) {
+						return;
+					}
+				}
+			}
+
 			const range = doc.getWordRangeAtPosition(pos, /[a-z\-]+\s*:/ig);
 
 			if (range === undefined) {
@@ -38,7 +55,7 @@ export function activate(context: vscode.ExtensionContext) {
 	};
 
 	let disposable = vscode.languages.registerHoverProvider(
-		['css', 'less', 'sass', 'scss'],
+		['css', 'less', 'sass', 'scss', 'vue', 'svelte'],
 		hoverProvider
 	);
 

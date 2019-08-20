@@ -14,7 +14,9 @@
 		"onLanguage:css",
 		"onLanguage:less",
 		"onLanguage:sass",
-		"onLanguage:scss"
+		"onLanguage:scss",
+		"onLanguage:vue",
+		"onLanguage:svelte"
 	],
 	"license": "MIT",
 	"main": "./out/extension.js",
