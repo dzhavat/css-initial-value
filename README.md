@@ -1,18 +1,19 @@
 # CSS Initial Value ([link](https://marketplace.visualstudio.com/items?itemName=dzhavat.css-initial-value))
 
-VS Code extension that shows the initial value of each property.
+VS Code extension that shows the initial value of each CSS property.
 
 ## Features
 
-* Works with the following file types:
-  * `CSS`
-  * `Less`
-  * `Sass`
-  * `Scss`
+Works with the following file types:
+
+* CSS
+* Less
+* Sass
+* Scss
 
 ## Demo
 
-![demo](demo.gif)
+![demo](images/demo.gif)
 
 ## Credit
 
