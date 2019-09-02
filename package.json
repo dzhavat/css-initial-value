@@ -1,8 +1,8 @@
 {
 	"name": "css-initial-value",
 	"displayName": "CSS Initial Value",
-	"description": "Get the initial value of each property.",
-	"version": "0.2.2",
+	"description": "Get the initial value of each CSS property.",
+	"version": "0.2.3",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -16,6 +16,7 @@
 		"onLanguage:sass",
 		"onLanguage:scss"
 	],
+	"icon": "images/icon.png",
 	"license": "MIT",
 	"main": "./out/extension.js",
 	"contributes": {},
