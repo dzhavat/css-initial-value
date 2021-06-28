@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.2.4 (2021-06-28)
+
+* Update with latest data from MDN
+* Set the minimum supported VS Code version to 1.52
+* Update dependencies
+
 ## 0.2.3 (2019-09-02)
 
 * Add icon for marketplace
