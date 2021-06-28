@@ -4,7 +4,7 @@
 	"description": "Get the initial value of each CSS property.",
 	"version": "0.2.3",
 	"engines": {
-		"vscode": "^1.36.0"
+		"vscode": "^1.52.0"
 	},
 	"categories": [
 		"Other",
@@ -36,7 +36,7 @@
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.0",
 		"@types/node": "^12.17.60",
-		"@types/vscode": "1.36.0",
+		"@types/vscode": "1.52.0",
 		"glob": "^7.1.7",
 		"mocha": "^9.0.0",
 		"tslint": "^6.1.3",
