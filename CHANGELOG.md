@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.5 (2021-06-28)
+
+* Update dependency to fix security vulnerability
+
 ## 0.2.4 (2021-06-28)
 
 * Update with latest data from MDN
