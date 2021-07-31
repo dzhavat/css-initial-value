@@ -14,7 +14,9 @@
 		"onLanguage:css",
 		"onLanguage:less",
 		"onLanguage:sass",
-		"onLanguage:scss"
+		"onLanguage:scss",
+		"onLanguage:vue",
+		"onLanguage:svelte"
 	],
 	"icon": "images/icon.png",
 	"license": "MIT",
