@@ -16,6 +16,9 @@
     "onLanguage:sass",
     "onLanguage:scss"
   ],
+  "vsce": {
+    "githubBranch": "main"
+  },
   "icon": "images/icon.png",
   "license": "MIT",
   "main": "./out/extension.js",
