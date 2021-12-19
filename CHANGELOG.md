@@ -2,6 +2,7 @@
 
 ## 0.2.6 (2021-12-19)
 
+- Update with latest data from MDN
 - Set the minimum supported VS Code version to 1.58.0
 - Update dependencies
 
